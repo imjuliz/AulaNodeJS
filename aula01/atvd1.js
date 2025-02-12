@@ -10,7 +10,7 @@ console.log("Seu IMC é igual a:", imc)
 //programa que calcula e exibe a temperatura em fahrenheit
 let celcius = 26;
 const fahrenheit = (celcius * 1.8) + 32
-console.log(celcius+'° em fahrenheit é igual a:', fahrenheit+'°F');
+console.log(celcius+'° em fahrenheit é igual a:', fahrenheit.toFixed(1) +'°F'); // .toFixed é para limitar o numero de casas decimais
 
 //programa que exibe o preço final de uma compra com o percentual de desconto sendo informado na entrada, bem como o preço do produto
 let precoProd = 1200, desconto = (precoProd / 100) * 15
