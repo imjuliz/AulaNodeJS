@@ -2,12 +2,12 @@
 const readline = require('readline-sync');
 let peso = Number(readline.question("Qual o seu peso?\n"));
 let altura = Number(readline.question("Qual a sua altura?\n"));
-
+const imc = peso/(altura**2)
 
 // verifica qual o estado da pessoa
-if (!(!isNaN(peso) === false && !isNaN(altura))) {
+if (!(!isNaN(peso) && !isNaN(altura))) {
     console.log('Peso ou altura invalida')
-} else if (peso < 10 || altura < 0.5 && altura > 2.50) {
+} else if (peso < 10 || altura < 0.5 || altura > 2.50) {
     console.log('altura ou peso invalido')
 }
 else if (imc < 17) {
