@@ -1,4 +1,3 @@
-
 const readline = require('readline-sync');
 let n = Number(readline.question("Digite um numero: \n"));
 
