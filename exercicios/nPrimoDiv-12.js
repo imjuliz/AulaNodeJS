@@ -1,14 +1,20 @@
 const readline = require('readline-sync');
-const num = Number(readline.question('Digite um numero positivo maior que 1:\n'));
-const formula = (num % 2 !== 0)
-let divisores;
+const numero = parseInt(readline.question('Digite um numero inteiro maior que 1: '));
 
-if (!isNaN(num) && num >1) {
-    if (formula) {
-        console.log(`${num} é numero impar`);
-    } else if(!formula){
-        console.log(`${num} é um numero par e é divisivel por ${divisores}[...]`)
-    }
+if (isNaN(numero) || numero <= 1) {
+    console.log('Numero invalido');
 } else {
-    console.log('numero invalido')
+    let ehPrimo = true;
+    let divisores = [];
+    for (let i = 2; i <= numero; i++) {
+        if (numero % i === 0) {
+            ehPrimo = false;
+            divisores.push(i);
+        }
+    }
+    if (ehPrimo) {
+        console.log(`${numero} é primo.`);
+    } else {
+        console.log(`${numero} nao é primo e é divisivel por: ${divisores.join(', ')}.`);
+    }
 }
