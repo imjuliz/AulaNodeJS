@@ -1,0 +1,11 @@
+* array (vetor/matriz) - estrutura que armazena informações de forma sequencial na memoria ram.
+array unidimensional - uma unica linha [vetor]. ex:
+[10, 5, 6, 0]
+
+array multidimensional - mais do que uma linha. ex:
+
+
+* métodos - funcionalidade de um objeto. depende do objeto
+metodo para ordenação léxica - nome.sort()
+metodo para ordenação crescente - nome.sort((a,b) => a-b)
+nome - objeto. sort() = metodo.
