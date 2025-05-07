@@ -7,19 +7,6 @@ const notas = {
     }
 }
 
-/*
-for (let num = 0; num > 0; num ++){
-    for(let nome in notas){
-        console.log(`${num}. ${nome} - `)
-        console.log(notas)
-    }
-}
-
-for(let nome in notas){
-console.log(nome, ': ', notas[nome]);
-}
-*/
-
 let num = 1
 for (let key in notas){
      for(let key2 in notas[key]){
