@@ -11,6 +11,6 @@ let num = 1
 for (let key in notas){
      for(let key2 in notas[key]){
         console.log(`${num}. ${key}: ${key2} ${notas[key][key2]}`)
-     
+     num++
 }
 }
